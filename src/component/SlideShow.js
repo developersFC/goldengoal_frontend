@@ -11,7 +11,7 @@ class slideShow extends React.Component {
     render() {
         return (
             <div>
-                <Card style={{ width: '40rem', height: '20rem', marginLeft: 350, marginTop: 20 }} className="card cardalign w-40 " >
+                <Card style={{ width: '45rem', height: '20rem', marginLeft: 535, marginTop: 20 }} className="card cardalign w-40 " >
                     <Carousel fade   >
                         <Carousel.Item interval={1000}  >
                      
@@ -54,7 +54,7 @@ class slideShow extends React.Component {
                         </Carousel.Item>
                     </Carousel>
                 </Card>
-                <Table responsive="sm" style={{ width: '30rem', marginLeft: 440, marginTop: 20 }}>
+                <Table responsive="sm" style={{ width: '45rem', marginLeft: 550, marginTop: 20 }}>
                     <thead>
                         <tr>
                             <th>#</th>
@@ -84,12 +84,11 @@ class slideShow extends React.Component {
                         </tr>
 
                         <tr>
-                            <th>4</th>
-                            <th>Table heading</th>
-                            <th>Table heading</th>
-                            <th>Table heading</th>
+                            <td>4</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
                         </tr>
-
                         <tr>
                             <td>5</td>
                             <td>Table cell</td>
@@ -98,12 +97,6 @@ class slideShow extends React.Component {
                         </tr>
                         <tr>
                             <td>6</td>
-                            <td>Table cell</td>
-                            <td>Table cell</td>
-                            <td>Table cell</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
                             <td>Table cell</td>
                             <td>Table cell</td>
                             <td>Table cell</td>
