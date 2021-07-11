@@ -1,0 +1,12 @@
+.navHeader{
+    text-align: center;
+    color: white;
+    background-color: black;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 150px 150px 150PX 150PX 1fr;
+  }
+  .navHeader a{
+    margin: 0 20px ;
+    text-decoration: none;
+  }
