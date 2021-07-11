@@ -1,0 +1,19 @@
+.login-form{
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin: auto;
+    height:100% ;
+    background-color: rgb(149, 214, 214);
+    border-radius: 3%;
+}
+
+.btn-dark{
+
+width: 100%;
+max-width: 600px;
+padding: 15px;
+margin: auto;
+height:100% ;
+}
+  
