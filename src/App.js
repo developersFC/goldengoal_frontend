@@ -11,12 +11,12 @@ export class App extends Component {
       <div>
 
         <Header />
-    
-        <Footer />
-
+       
         <SlideShow/>
 
         <FavForm/>
+
+        <Footer />
 
       </div>
     )
