@@ -1,18 +1,17 @@
-import React, { Component } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import'./Footer.css';
 
-export class Footer extends Component {
-    render() {
-        return (
-            <div>
-                
-                    <h1 className="hi">
-                     &copy; Best Team
-                    </h1>
-            </div>
-        )
-    }
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from 'react-bootstrap/Navbar';
+import './Footer.css'
+
+class Footer extends React.Component {
+  render() {
+    return(
+      <Navbar className="hi">
+        <Navbar.Brand className="team">&copy; Best Team</Navbar.Brand>
+      </Navbar>
+    );
+  }
 }
 
-export default Footer
+export default Footer;
