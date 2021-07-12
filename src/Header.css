@@ -1,0 +1,33 @@
+body{
+background-color: rgb(149, 214, 214);}
+/*Design nav*/
+nav{
+  background-color:#2faf6d;
+}
+nav ul li {
+  display: inline-block;
+  text-decoration: none;
+}
+nav ul li a {
+  text-decoration: none;
+  margin-left: 25px;
+  color: #000;
+  font-family: ui-monospace;
+  
+}
+/*End Edign nav*/
+/*************************************/
+/**design logo**/
+img {
+  width: 60px;
+  height: 60px;
+}
+/**End edsign Logo**/
+/****************************************************/
+
+.login {
+  width: 20px;
+  /* position: fixed;
+    float: right;
+    margin-left: 0%; */
+}

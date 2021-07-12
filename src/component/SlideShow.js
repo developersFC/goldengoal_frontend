@@ -11,7 +11,7 @@ class slideShow extends React.Component {
     render() {
         return (
             <div>
-                <Card className="card cardalign w-40 " className='card'>
+                <Card className="card cardalign w-40 " >
                     {/* style={{ width: '40rem', height: '20rem', marginLeft: 350, marginTop: 20 }} */}
                     <Carousel fade   >
                         <Carousel.Item interval={1000}  >

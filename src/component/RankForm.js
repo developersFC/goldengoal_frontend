@@ -49,35 +49,41 @@ export class RankForm extends Component {
 
     render() {
         return (
-
-            <div>
-                <Jumbotron className="cont">
-                    <Form className="login-form" onSubmit={this.handleSubmit} >
-                        <legend>
-                            Pick the league you want to see the ranking for
-                        </legend>
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label> Enter the country code </Form.Label>
-                            <Form.Control size="lg" type="text" placeholder="your team" className="text-center" onChange={this.codeIdChange} />
-                            <DropdownButton className="btn-dark" title="leagues">
-                               {/* {for (let i = 0; i < array.length; i++) {
+          <div>
+            <Jumbotron className="cont">
+              <Form
+                className="login-form"
+                onSubmit={this.handleSubmit}
+                style={{ marginTop:10}}
+              >
+                <legend>Pick the league you want to see the ranking for</legend>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                  <Form.Label> Enter the country code </Form.Label>
+                  <Form.Control
+                    size="lg"
+                    type="text"
+                    placeholder="your team"
+                    className="text-center"
+                    onChange={this.codeIdChange}
+                  />
+                  <DropdownButton className="btn-dark" title="leagues">
+                    {/* {for (let i = 0; i < array.length; i++) {
                                    
                                    
                          
                                 <Dropdown.Item value="h">Action</Dropdown.Item>
                                }
                                } */}
-                            </DropdownButton>
-                        </Form.Group>
-                        <Button className="btn-dark" type="submit">
-                            Submit
-                        </Button>
-                    </Form>
-                </Jumbotron>
-                {console.log(this.state.codeId)}
-            </div>
-
-        )
+                  </DropdownButton>
+                </Form.Group>
+                <Button className="btn-dark" type="submit">
+                  Submit
+                </Button>
+              </Form>
+            </Jumbotron>
+            {console.log(this.state.codeId)}
+          </div>
+        );
     }
 }
 
