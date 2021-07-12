@@ -4,23 +4,24 @@ import { Card, Table } from 'react-bootstrap';
 import Collapse from 'react-bootstrap/Collapse'
 class slideShow extends React.Component {
 
-  
-   
-   
+
+
+
 
     render() {
         return (
             <div>
-                <Card style={{ width: '40rem', height: '20rem', marginLeft: 350, marginTop: 20 }} className="card cardalign w-40 " >
+                <Card className="card cardalign w-40 " className='card'>
+                    {/* style={{ width: '40rem', height: '20rem', marginLeft: 350, marginTop: 20 }} */}
                     <Carousel fade   >
                         <Carousel.Item interval={1000}  >
-                     
+
 
                             <img
                                 className="d-block w-100"
                                 src="https://football-observatory.com/IMG/sites/b5wp/2019/wp299/en/img/wp299.jpg "
                                 alt="First slide"
-                                style={{ width: '28rem', height: '20rem' }}
+                                
                             />
 
                             <Carousel.Caption>
@@ -31,9 +32,9 @@ class slideShow extends React.Component {
                         <Carousel.Item interval={1000}>
                             <img
                                 className="d-block w-100"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTclI5xLQn8bmz64gG5v9NwMwUoYWLReSPvaA&usqp=CAU"
+                                src="https://img.olympicchannel.com/images/image/private/t_16-9_360-203_2x/f_auto/v1538355600/primary/djnacbhtd6zvpkdiixah"
                                 alt="Second slide"
-                                style={{ width: '28rem', height: '20rem' }}
+                              
                             />
                             <Carousel.Caption>
                               
@@ -43,18 +44,83 @@ class slideShow extends React.Component {
                         <Carousel.Item interval={1000}>
                             <img
                                 className="d-block w-100"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMFJKEhRviDm6zbQmbFGcOdYYs6kxMXlu7bQ&usqp=CAU"
+                                src="https://amayei.nyc3.digitaloceanspaces.com/2018/09/salaah.jpg"
                                 alt="Third slide"
-                                style={{ width: '28rem', height: '20rem' }}
+                                
                             />
                             <Carousel.Caption>
                         
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </Carousel.Caption>
-                        </Carousel.Item>
+                            </Carousel.Item>
+                            <Carousel.Item interval={1000}>
+                                <img
+                                    className="d-block w-100"
+                                    src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2021/05/cristiano-ronaldo-1621913499.jpg"
+                                    alt="Third slide"
+                                    
+                                />
+                                <Carousel.Caption>
+                                    <h3>forth slide label</h3>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+
+
+
+                            <Carousel.Item interval={1000}>
+                                <img
+                                    className="d-block w-100"
+                                    src="https://imagevars.gulfnews.com/2020/12/21/201221-Benzema_176826eda4b_medium.jpg"
+                                    alt="Third slide"
+                                  
+                                />
+                                <Carousel.Caption>
+                                    <h3>fifth slide label</h3>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+
+
+
+                            <Carousel.Item interval={1000}>
+                                <img
+                                    className="d-block w-100"
+                                    src="https://d2x51gyc4ptf2q.cloudfront.net/content/uploads/2021/06/23225015/Benzema-Ronaldo.jpg"
+                                    alt="Third slide"
+                                   
+                                />
+                                <Carousel.Caption>
+                                    <h3>sixth slide label</h3>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+
+
+
+
+                            <Carousel.Item interval={1000}>
+                                <img
+                                    className="d-block w-100"
+                                    src="https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/default/0002/16/thumb_115201_default_news_size_5.jpeg"
+                                    alt="Third slide"
+                                  
+                                />
+                                <Carousel.Caption>
+                                    <h3>seventh slide label</h3>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+
+
+
+
+                            
+
+                        
                     </Carousel>
                 </Card>
-                <Table responsive="sm" style={{ width: '30rem', marginLeft: 440, marginTop: 20 }}>
+                <Table className="table" responsive="sm" >
                     <thead>
                         <tr>
                             <th>#</th>
@@ -84,10 +150,10 @@ class slideShow extends React.Component {
                         </tr>
 
                         <tr>
-                            <th>4</th>
-                            <th>Table heading</th>
-                            <th>Table heading</th>
-                            <th>Table heading</th>
+                            <td>4</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
                         </tr>
 
                         <tr>

@@ -30,10 +30,60 @@
   color: white;
 }
 
+
 .App-link {
   color: #61dafb;
 }
 
+.table{
+  font-family: 'Otomanopee One', sans-serif;
+  font-size: larger;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:30rem;
+  margin-Top: 20px;
+  /* style={{ width: '30rem', marginLeft: 440, marginTop: 20 }} */
+  /* background-color: rgb(42, 167, 20);; */
+}
+
+.div{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: #225643; */
+  background-image: url("https://wallpapercave.com/wp/OVAReQU.jpg");
+  
+  /* background-image: url("https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"); */
+ overflow: hidden;
+ background-size: cover;
+}
+
+.cont{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+/* style={{ width: '28rem', height: '20rem' }}           */
+.card{
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  margin-bottom: 10px;
+  /* border: 1px solid; */
+  /* padding: 10px; */
+  /* box-shadow: 5px 10px #000000; */
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card img{
+  width: 28rem;
+  height: 500px;
+  /* box-shadow: yellowgreen; */
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -42,3 +92,4 @@
     transform: rotate(360deg);
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
