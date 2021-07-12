@@ -11,10 +11,13 @@ export class App extends Component {
     return (
       <div className="background-image">
         <Header />
+
+
         <RankForm/>
         <SlideShow />
         <FavForm />
         <Footer />
+
       </div>
     )
   }
