@@ -8,6 +8,8 @@ import FavTeam from "./components/pages/FavTeam";
 import LiveScoure from "./components/pages/LiveScoure";
 import SignUp from "./components/pages/SignUp";
 import Compare from "./components/pages/Compare";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import LoginButton from "./components/pages/LoginButton";
 function App() {
   return (
