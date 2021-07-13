@@ -13,7 +13,7 @@ function HeroSection() {
         id="coverimg"
       />
       <h1>GoldenGoal</h1>
-      <div className="hero-btns">
+      {/* <div className="hero-btns">
         <Button
           className="btns"
           buttonStyle="btn--outline"
@@ -22,7 +22,7 @@ function HeroSection() {
           GET STARTED
         </Button>
       
-      </div>
+      </div> */}
     </div>
   );
 }
