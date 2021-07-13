@@ -14,6 +14,7 @@ export class TeamUserFav extends Component {
             type="text"
             name="favTeam"
             placeholder="please Enter fav Team"
+          id='inpfav'
           />
           <br />
           <button type="submit" id="btnSubmit">
