@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import "../../App.css";
-import "./FavTeam.css";
+// import "../../App.css";
+// import "./FavTeam.css";
+// import "./HeroSection.css";
 import Footer from '../Footer';
+import "./anotherFavTeam.css"
 
 import {
   Button,
@@ -42,7 +44,6 @@ class FavTeam extends Component {
         id="coverimg"
       />
    
-    </div>
       <div>
         <Card
           style={{
@@ -104,12 +105,15 @@ class FavTeam extends Component {
             <br></br>
             <br></br>
             </Modal.Body>
-            <Modal.Footer>
+            {/* <Modal.Footer>
               <Button    variant="outlined" color="primary" onClick={() => {this.handleModal()}}>
                 Close
               </Button>
 
-            </Modal.Footer>
+            </Modal.Footer> */}
+            <button className="botClose1" onClick={() => {this.handleModal()}}>
+            Close
+            </button>
           </Modal>
 
 
@@ -124,7 +128,7 @@ class FavTeam extends Component {
            
               <Table className="table" responsive="sm">
           <div className='desForm'>Football / Soccer Club World Ranking</div>
-          <thead>
+          <thead className="theadTableFAV">
             <tr>
               <th>#</th>
               <th>Table heading</th>
@@ -132,7 +136,7 @@ class FavTeam extends Component {
               <th>Table heading</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="tbodyTableFAV">
             <tr>
               <td>1</td>
               <td>Table cell</td>
@@ -182,20 +186,25 @@ class FavTeam extends Component {
     
 
             </Modal.Body>
-            <Modal.Footer>
-              <Button    variant="outlined" color="primary" onClick={() => {this.handleRanking()}}>
+            {/* <Modal.Footer>
+              <Button className="botClose"   variant="outlined" color="primary" onClick={() => {this.handleRanking()}}>
                 Close
               </Button>
 
-            </Modal.Footer>
+            </Modal.Footer> */}
+            <button className="botClose" onClick={() => {this.handleRanking()}}>
+            Close
+            </button>
           </Modal>
 
 
         </Card>
       </div>
-      <Footer />
-
-    </>
+     
+    </div>
+    
+      {/* <Footer /> */}
+     </>
     )
   }
 }
