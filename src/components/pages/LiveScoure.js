@@ -1,8 +1,11 @@
 import React from 'react';
 import '../../App.css';
+import Footer from '../Footer';
+
 
 export default function Services() {
   return (
+    <>
    <div className="hero-container">
       <h1 className="products">LiveScoure</h1>;
       {/* <video src='/videos/video-1.mp4' autoPlay loop muted /> */}
@@ -12,4 +15,6 @@ export default function Services() {
         id="coverimg"
       />
     </div>
+    <Footer />
+    </>
   ); }
