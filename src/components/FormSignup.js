@@ -26,7 +26,7 @@ const FormSignup = ({ submitForm }) => {
         </div>
 
         <select
-          style={{ width: "125px", textAlign: "center", fontSize: "20px" }}
+          style={{ width: "125px", textAlign: "center", fontSize: "20px" ,width:'348px',height:'40px'}}
         >
           <option value="jo">jo</option>
           <option value="sy">sy</option>

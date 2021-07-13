@@ -9,7 +9,7 @@ function Home() {
     <>
       <HeroSection />
       <Form/>
-      <Tables/>
+      {/* <Tables/> */}
       <Footer />
     </>
   );

@@ -43,7 +43,7 @@
   font-size: 100px;
 }
 
-table{
+/* table{
   font-family: 'Otomanopee One', sans-serif;
   font-size: 22px;
   display: block;
@@ -66,5 +66,30 @@ table thead tr{
 table tbody tr{
   display: grid;
   grid-template-columns: 75px 270px 275px 265px;
+  margin-top: 20px;
+} */
+
+
+table{
+  font-family: 'Otomanopee One', sans-serif;
+  font-size: 22px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-Top: 20px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-weight: bold;
+ padding: 20px;
+}
+table thead tr{
+  display: grid;
+  grid-template-columns: 20px 180px 180px 180px;
+  border-bottom: 1px solid;
+ padding: 10px;
+}
+table tbody tr{
+  display: grid;
+  grid-template-columns: 65px 200px 180px 180px;
   margin-top: 20px;
 }
