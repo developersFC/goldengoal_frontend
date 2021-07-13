@@ -1,14 +1,16 @@
-import React from "react";
-import { withAuth0 } from "@auth0/auth0-react";
-import Navbar from "./components/Navbar";
-import "./App.css";
-import Home from "./components/pages/Home";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import FavTeam from "./components/pages/FavTeam";
-import LiveScoure from "./components/pages/LiveScoure";
-import SignUp from "./components/pages/SignUp";
-import Compare from "./components/pages/Compare";
+import React from 'react';
+import { withAuth0 } from '@auth0/auth0-react';
+import Navbar from './components/Navbar';
+import './App.css';
+import Home from './components/pages/Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import FavTeam from './components/pages/FavTeam';
+import LiveScoure from './components/pages/LiveScoure';
+import SignUp from './components/pages/SignUp';
+import Compare from './components/pages/Compare';
 // import LoginButton from "./components/pages/LoginButton";
+import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+
 function App() {
   return (
     <>

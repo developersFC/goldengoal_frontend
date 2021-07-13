@@ -1,69 +1,26 @@
-import React, { Component } from 'react'
-import { Table } from "react-bootstrap";
-export class Tables extends Component {
-  render() {
-    return (
-      <div>
-        <Table className="table" responsive="sm">
-          <div className='desForm'>Football / Soccer Club World Ranking</div>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-              <th>Table heading</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
+import BootstrapTable from 'react-bootstrap-table-next';
 
-            <tr>
-              <td>4</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
+const Tables = ({ products }) => {
+  const columns = [
+    {
+      dataField: 'rank',
+      text: 'Rank',
+    },
+    {
+      dataField: 'name',
+      text: 'Name',
+    },
+    {
+      dataField: 'points',
+      text: 'Points',
+    },
+  ];
 
-            <tr>
-              <td>5</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-          </tbody>
-        </Table>
-      </div>
-    );
-  }
-}
+  return (
+    <>
+      <BootstrapTable keyField="id" data={products} columns={columns} />
+    </>
+  );
+};
 
 export default Tables;
