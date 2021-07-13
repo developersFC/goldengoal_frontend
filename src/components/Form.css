@@ -14,6 +14,7 @@ color:#fff;
 padding: 10px;
 font-family: Cursive;
 font-size: 25px;
+margin-top: 39px;
 }
 
 
@@ -71,7 +72,7 @@ font-size: 25px;
 
 .form {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
