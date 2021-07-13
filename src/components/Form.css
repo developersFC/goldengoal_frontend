@@ -8,6 +8,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.descForm{
+color:#fff;
+padding: 10px;
+font-family: Cursive;
+font-size: 25px;
+}
+
 
 .close-btn {
   position: absolute;
