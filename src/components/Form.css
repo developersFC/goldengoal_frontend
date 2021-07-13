@@ -1,5 +1,5 @@
 .form-container {
-  margin: 100px auto;
+  margin: -750px auto 100px auto ;
   width: 1150px;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   position: relative;
@@ -7,6 +7,7 @@
   height: 600px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* margin-top: -; */
 }
 .descForm{
 color:#fff;
