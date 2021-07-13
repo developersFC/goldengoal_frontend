@@ -1,7 +1,7 @@
 import React from "react";
 import "../../App.css";
 
-export default function Products() {
+export default function FavTeam() {
   return (
     <div className="hero-container">
       <h1 className="products">FavTeam</h1>;

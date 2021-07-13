@@ -3,13 +3,13 @@ import '../../App.css';
 import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 import Form from '../Form';
-import Tables from "../Tables";
+import TeamUserFav from "../TeamUserFav";
 function Home() {
   return (
     <>
       <HeroSection />
-      <Form/>
-      {/* <Tables/> */}
+      <Form />
+      <TeamUserFav/>
       <Footer />
     </>
   );

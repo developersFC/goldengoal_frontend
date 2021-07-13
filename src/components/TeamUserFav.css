@@ -1,0 +1,58 @@
+form {
+}
+/* #favTeam {
+  color: red;
+} */
+.FormFAV {
+  margin: 50px auto;
+  padding: 50px;
+  background-color: #000;
+  width: 550px;
+  border-radius: 20px;
+}
+h1 {
+  margin: 10px auto;
+  color: #fff;
+  padding: 10px;
+  /* width: 270px; */
+}
+label {
+  color: #fff;
+
+  margin: 50px auto;
+  font-size: 20px;
+  padding: 20px;
+}
+input {
+ display: block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 90%;
+  border: none;
+}
+#btnSubmit {
+  width: 90%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 176, 255) 0%,
+    rgb(0, 232, 236) 100%
+  );
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+#btnSubmit:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(39, 143, 255) 0%,
+    rgb(12, 99, 250) 100%
+  );
+  transition: all 0.4s ease-out;
+}
