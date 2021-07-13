@@ -95,7 +95,7 @@
 
 .form-label {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   margin-bottom: 6px;
   color: #fff;
 }
@@ -112,7 +112,7 @@
 
 .form-input::placeholder {
   color: #595959;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .form-input-btn {
