@@ -9,16 +9,16 @@ import LiveScoure from "./components/pages/LiveScoure";
 import SignUp from "./components/pages/SignUp";
 import Compare from "./components/pages/Compare";
 // import LoginButton from "./components/pages/LoginButton";
-function App() {
+function App(props) {
   return (
     <>
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/FavTeam" component={FavTeam} />
-          <Route path="/liveScoure" component={LiveScoure} />
-          <Route path="/Compare" component={Compare} />
+          <Route path="/" exact component={props.auth0.isAuthenticated ? Home: Home }/>
+          <Route path="/FavTeam" component={props.auth0.isAuthenticated ? FavTeam: SignUp }/>
+          <Route path="/liveScoure" component={props.auth0.isAuthenticated ? LiveScoure: SignUp }/>
+          <Route path="/Compare" component={props.auth0.isAuthenticated ? Compare: SignUp }/> 
           <Route path="/sign-up" component={SignUp} />
         </Switch>
       </Router>

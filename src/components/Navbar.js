@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-
-function Navbar() {
+import { withAuth0 } from "@auth0/auth0-react";
+import { useAuth0 } from "@auth0/auth0-react";
+function Navbar(props) {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -23,6 +24,20 @@ function Navbar() {
   }, []);
 
   window.addEventListener('resize', showButton);
+  const LoginButton = () => {
+    const { loginWithRedirect } = useAuth0();
+
+    return <Button buttonStyle="btn--outline" onClick={() => loginWithRedirect()}>Log In</Button>;
+  };
+  const LogoutButton = () => {
+    const { logout } = useAuth0();
+  
+    return (
+      <Button buttonStyle="btn--outline" onClick={() => logout({ returnTo: window.location.origin })}>
+        Log Out
+      </Button>
+    );
+  };
 
   return (
     <>
@@ -82,15 +97,15 @@ function Navbar() {
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Sign Up
+             login
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          {button &&  props.auth0.isAuthenticated ?  <LogoutButton/>   :<LoginButton / >}
         </div>
       </nav>
     </>
   );
 }
 
-export default Navbar;
+export default withAuth0(Navbar);
