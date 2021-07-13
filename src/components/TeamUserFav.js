@@ -7,7 +7,7 @@ export class TeamUserFav extends Component {
         <form className="FormFAV">
           <h1>Favourite Team</h1>
           <label for="favTeam" id="favTeam">
-            Pick your Favourite Team ⚽️
+            Pick your Favourite Team ⚽️<br></br>
           </label>
           <br />
           <input
@@ -16,7 +16,9 @@ export class TeamUserFav extends Component {
             placeholder="please Enter fav Team"
           />
           <br />
-          <button type="submit" id='btnSubmit'>Submit</button>
+          <button type="submit" id="btnSubmit">
+            Submit
+          </button>
         </form>
       </div>
     );
