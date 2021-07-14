@@ -17,7 +17,7 @@ export class Compare extends Component {
         <div class="all">
           <div class="img-wrapper">
             <Card className="cards">
-              <Card.Img variant="top" src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2F83afb31c-38fc-11e9-9988-28303f70fcff?fit=scale-down&source=next&width=700" className='img' />
+              <Card.Img variant="top" src="https://ca.slack-edge.com/TNGRRLUMA-U01TXFQ08MQ-c2d29b951a77-512" className='img' />
               <Card.Body>
                 <Card.Title>Mohammad Lababneh</Card.Title>
                 <Card.Text>
@@ -25,21 +25,21 @@ export class Compare extends Component {
                   the card's content.
                 </Card.Text>
               </Card.Body>
-              <ListGroup className="list-group-flush"><ListGroupItem>Cras justo odio</ListGroupItem></ListGroup>
+              <ListGroup className="list-group-flush"><ListGroupItem>Software Developer</ListGroupItem></ListGroup>
               <Card.Body>
                 <MDBContainer className="MDBContainer">
 
                   <a href="https://github.com/mohammad-lababneh" className='a' className="fb-ic mr-3" target="_blank">
-                    <MDBIcon className="MDBIcon"  fab icon="facebook-f" />
+                    <MDBIcon className="MDBIcon" fab icon="facebook-f" />
                   </a>
                   <a href="https://github.com/mohammad-lababneh" className='a' className="tw-ic mr-3" target="_blank">
-                    <MDBIcon  className="MDBIcon" fab icon="twitter" />
+                    <MDBIcon className="MDBIcon" fab icon="twitter" />
                   </a>
                   <a href="https://github.com/mohammad-lababneh" className='a' className="li-ic mr-3" target="_blank">
-                    <MDBIcon className="MDBIcon"  fab icon="linkedin-in" />
+                    <MDBIcon className="MDBIcon" fab icon="linkedin-in" />
                   </a>
                   <a href="https://github.com/mohammad-lababneh" className='a' className="git-ic mr-3" target="_blank">
-                    <MDBIcon  className="MDBIcon" fab icon="github" />
+                    <MDBIcon className="MDBIcon" fab icon="github" />
                   </a>
                 </MDBContainer>
 
@@ -47,143 +47,149 @@ export class Compare extends Component {
             </Card>
 
           </div>
+          </div>
+
+
+          <div class="all">
+
+          <Card className="cards">
+            <Card.Img variant="top" src="https://ca.slack-edge.com/TNGRRLUMA-U01RY3TCY11-7c15bdd95f8d-512" className='img' />
+
+
+            <Card.Body>
+              <Card.Title >Thaer Braizat</Card.Title>
+              <Card.Text>
+                Some quick example the bulk of
+                the card's content.
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush"><ListGroupItem>Software Developer</ListGroupItem></ListGroup>
+            <Card.Body>
+              <MDBContainer className="MDBContainer">
+                <a href="#!" className="fb-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="facebook-f" />
+                </a>
+                <a href="#!" className="tw-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="twitter" />
+                </a>
+                <a href="#!" className="li-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="linkedin-in" />
+                </a>
+                <a href="#!" className="git-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="github" />
+                </a>
+              </MDBContainer>
+
+            </Card.Body>
+          </Card>
+          </div>
+
+
+
+
+          <div class="all">
+
+          <Card className="cards">
+            <Card.Img variant="top" src="https://ca.slack-edge.com/TNGRRLUMA-U01UM9UPGQY-ddd5b98f8cc8-512" className='img' />
+
+
+            <Card.Body>
+              <Card.Title>Qasem Mohammad </Card.Title>
+              <Card.Text>
+                Some quick example the bulk of
+                the card's content.
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush"><ListGroupItem>Software Developer</ListGroupItem></ListGroup>
+            <Card.Body>
+              <MDBContainer className="MDBContainer">
+                <a href="#!" className="fb-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="facebook-f" />
+                </a>
+                <a href="#!" className="tw-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="twitter" />
+                </a>
+                <a href="#!" className="li-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="linkedin-in" />
+                </a>
+                <a href="#!" className="git-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="github" />
+                </a>
+              </MDBContainer>
+
+            </Card.Body>
+          </Card>
+          </div>
+
+
+          <div class="all">
+
+          <Card className="cards">
+            <Card.Img variant="top" src="https://ca.slack-edge.com/TNGRRLUMA-U01SAFN4JUR-99c2bd50d725-512" className='img' />
+
+
+            <Card.Body>
+              <Card.Title>Saif Momani </Card.Title>
+              <Card.Text>
+                Some quick example the bulk of
+                the card's content.
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush"><ListGroupItem>Software Developer</ListGroupItem></ListGroup>
+            <Card.Body>
+              <MDBContainer className="MDBContainer">
+                <a href="#!" className="fb-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="facebook-f" />
+                </a>
+                <a href="#!" className="tw-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="twitter" />
+                </a>
+                <a href="#!" className="li-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="linkedin-in" />
+                </a>
+                <a href="#!" className="git-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="github" />
+                </a>
+              </MDBContainer>
+
+            </Card.Body>
+          </Card>
+          </div>
+
+
+
+          <div class="all">
+
+          <Card className="cards">
+            <Card.Img variant="top" src="https://ca.slack-edge.com/TNGRRLUMA-U01SV448ZB3-839684d6e331-512" className='img' />
+            <Card.Body>
+              <Card.Title>Nedal Alashqar</Card.Title>
+              <Card.Text>
+                Some quick example the bulk of
+                the card's content.
+              </Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush"><ListGroupItem>Software Developer</ListGroupItem></ListGroup>
+            <Card.Body>
+              <MDBContainer className="MDBContainer">
+                <a href="#!" className="fb-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="facebook-f" />
+                </a>
+                <a href="#!" className="tw-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="twitter" />
+                </a>
+                <a href="#!" className="li-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="linkedin-in" />
+                </a>
+                <a href="#!" className="git-ic mr-3">
+                  <MDBIcon className="MDBIcon" fab icon="github" />
+                </a>
+              </MDBContainer>
+
+            </Card.Body>
+          </Card>
         </div>
-
-
-        <Card className="cards">
-          <Card.Img variant="top" src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2F83afb31c-38fc-11e9-9988-28303f70fcff?fit=scale-down&source=next&width=700" className='img' />
-
-
-          <Card.Body>
-            <Card.Title >Mohammad Lababneh</Card.Title>
-            <Card.Text>
-              Some quick example the bulk of
-              the card's content.
-            </Card.Text>
-          </Card.Body>
-          <ListGroup className="list-group-flush"><ListGroupItem>Cras justo odio</ListGroupItem></ListGroup>
-          <Card.Body>
-            <MDBContainer className="MDBContainer">
-              <a href="#!" className="fb-ic mr-3">
-                <MDBIcon fab icon="facebook-f" />
-              </a>
-              <a href="#!" className="tw-ic mr-3">
-                <MDBIcon fab icon="twitter" />
-              </a>
-              <a href="#!" className="li-ic mr-3">
-                <MDBIcon fab icon="linkedin-in" />
-              </a>
-              <a href="#!" className="git-ic mr-3">
-                <MDBIcon fab icon="github" />
-              </a>
-            </MDBContainer>
-
-          </Card.Body>
-        </Card>
-
-
-
-
-
-        <Card className="cards">
-          <Card.Img variant="top" src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2F83afb31c-38fc-11e9-9988-28303f70fcff?fit=scale-down&source=next&width=700" className='img' />
-
-
-          <Card.Body>
-            <Card.Title>Mohammad Lababneh</Card.Title>
-            <Card.Text>
-              Some quick example the bulk of
-              the card's content.
-            </Card.Text>
-          </Card.Body>
-          <ListGroup className="list-group-flush"><ListGroupItem>Cras justo odio</ListGroupItem></ListGroup>
-          <Card.Body>
-            <MDBContainer className="MDBContainer">
-              <a href="#!" className="fb-ic mr-3">
-                <MDBIcon fab icon="facebook-f" />
-              </a>
-              <a href="#!" className="tw-ic mr-3">
-                <MDBIcon fab icon="twitter" />
-              </a>
-              <a href="#!" className="li-ic mr-3">
-                <MDBIcon fab icon="linkedin-in" />
-              </a>
-              <a href="#!" className="git-ic mr-3">
-                <MDBIcon fab icon="github" />
-              </a>
-            </MDBContainer>
-
-          </Card.Body>
-        </Card>
-
-
-
-        <Card className="cards">
-          <Card.Img variant="top" src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2F83afb31c-38fc-11e9-9988-28303f70fcff?fit=scale-down&source=next&width=700" className='img' />
-
-
-          <Card.Body>
-            <Card.Title>Mohammad Lababneh</Card.Title>
-            <Card.Text>
-              Some quick example the bulk of
-              the card's content.
-            </Card.Text>
-          </Card.Body>
-          <ListGroup className="list-group-flush"><ListGroupItem>Cras justo odio</ListGroupItem></ListGroup>
-          <Card.Body>
-            <MDBContainer className="MDBContainer">
-              <a href="#!" className="fb-ic mr-3">
-                <MDBIcon fab icon="facebook-f" />
-              </a>
-              <a href="#!" className="tw-ic mr-3">
-                <MDBIcon fab icon="twitter" />
-              </a>
-              <a href="#!" className="li-ic mr-3">
-                <MDBIcon fab icon="linkedin-in" />
-              </a>
-              <a href="#!" className="git-ic mr-3">
-                <MDBIcon fab icon="github" />
-              </a>
-            </MDBContainer>
-
-          </Card.Body>
-        </Card>
-
-
-
-
-        <Card className="cards">
-          <Card.Img variant="top" src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2F83afb31c-38fc-11e9-9988-28303f70fcff?fit=scale-down&source=next&width=700" className='img' />
-
-
-          <Card.Body>
-            <Card.Title>Mohammad Lababneh</Card.Title>
-            <Card.Text>
-              Some quick example the bulk of
-              the card's content.
-            </Card.Text>
-          </Card.Body>
-          <ListGroup className="list-group-flush"><ListGroupItem>Cras justo odio</ListGroupItem></ListGroup>
-          <Card.Body>
-            <MDBContainer className="MDBContainer">
-              <a href="#!" className="fb-ic mr-3">
-                <MDBIcon fab icon="facebook-f" />
-              </a>
-              <a href="#!" className="tw-ic mr-3">
-                <MDBIcon fab icon="twitter" />
-              </a>
-              <a href="#!" className="li-ic mr-3">
-                <MDBIcon fab icon="linkedin-in" />
-              </a>
-              <a href="#!" className="git-ic mr-3">
-                <MDBIcon fab icon="github" />
-              </a>
-            </MDBContainer>
-
-          </Card.Body>
-        </Card>
-
-      </div>
+        </div>
 
 
 
