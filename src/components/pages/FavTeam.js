@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import "../../App.css";
 import "./FavTeam.css";
+import axios from 'axios';
+
 import {
   Button,
   Card,
@@ -19,6 +21,8 @@ class FavTeam extends Component {
     this.state = {
       show: false,
       showRank: false,
+      arrOfMatch:[],
+      teamId:"39"
     }
   }
 
@@ -28,7 +32,21 @@ class FavTeam extends Component {
   handleRanking = () => {
     this.setState({ showRank: !this.state.showRank })
   }
+ 
+  
+  getMatchesFav = async () => {
+    await axios.get(`${process.env.REACT_APP_SERVER_URL}/favmatches?teamId=${this.state.teamId}`).then((res) => {
+      console.log(res);
+      this.setState({
+        arrOfMatch: res.data,
+      },this.handleModal()
+      );
 
+
+      console.log(this.state.arrOfMatch);
+
+    });
+  };
   render() {
     return (
       <div>
@@ -55,14 +73,16 @@ class FavTeam extends Component {
           <CardActions>
             <Grid container justify="center">
               <Button
-                onClick={this.handleModal}
+                onClick={this.getMatchesFav}
+            
                 variant="outlined"
                 color="secondary"
               >
                 Recent match
               </Button>
               <Button
-              onClick={this.handleRanking}
+              onClick={this.handleRanking }
+           
                 style={{ marginLeft: 5 }}
                 variant="outlined"
                 color="primary"
@@ -88,7 +108,18 @@ class FavTeam extends Component {
             </Modal.Header>
             <Modal.Body>
               <br></br>
-            Realmadrid    4   -   4     Realmadrid    
+              { this.state.arrOfMatch.map(match =>{
+
+              return <>
+  
+              <h1 style={{color:"red"}}>  {new Date(match.date).toDateString()}      {match.league}    {match.homeTeam}   {match.awayTeam} </h1>
+              </>
+
+              })
+              }
+
+            realmadrid 1  3 ewr 
+
             <br></br>
             <br></br>
             </Modal.Body>
@@ -112,15 +143,14 @@ class FavTeam extends Component {
            
               <Table className="table" responsive="sm">
           <div className='desForm'>Football / Soccer Club World Ranking</div>
-          <thead>
+         
             <tr>
               <th>#</th>
               <th>Table heading</th>
               <th>Table heading</th>
               <th>Table heading</th>
             </tr>
-          </thead>
-          <tbody>
+          
             <tr>
               <td>1</td>
               <td>Table cell</td>
@@ -133,39 +163,6 @@ class FavTeam extends Component {
               <td>Table cell</td>
               <td>Table cell</td>
             </tr>
-            <tr>
-              <td>3</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-
-            <tr>
-              <td>4</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-
-            <tr>
-              <td>5</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-              <td>Table cell</td>
-            </tr>
-          </tbody>
         </Table>
     
 
@@ -179,7 +176,9 @@ class FavTeam extends Component {
           </Modal>
 
 
+
         </Card>
+        
       </div>
     )
   }
