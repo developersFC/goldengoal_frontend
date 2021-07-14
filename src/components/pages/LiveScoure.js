@@ -1,15 +1,92 @@
-import React from 'react';
+import React, { Component } from 'react'
 import '../../App.css';
+import axios from 'axios';
+export class LiveScoure extends Component {
+  constructor(){
+    super()
+    this.state = {
+      liveMatchArr:[],
 
-export default function Services() {
-  return (
-   <div className="hero-container">
-      <h1 className="products">LiveScoure</h1>;
-      {/* <video src='/videos/video-1.mp4' autoPlay loop muted /> */}
-      <img
-        src="https://www.photoshop-library.com/wp-content/uploads/edd/2020/09/%D8%B5%D9%88%D8%B1%D8%A9-%D8%AE%D9%84%D9%81%D9%8A%D8%A9-%D9%85%D9%84%D8%B9%D8%A8-%D9%83%D8%B1%D8%A9-%D9%82%D8%AF%D9%85-JBG.jpg"
-        alt=""
-        id="coverimg"
-      />
-    </div>
-  ); }
+    }
+  }
+
+  liveScore = async (e) => {
+    
+        
+      e.preventDefault();
+      await axios.get(`${process.env.REACT_APP_SERVER_URL}/live`).then((res) => {
+        this.setState({
+          liveMatchArr: res.data.liveMatchArr,
+        });
+        console.log(this.state.liveMatchArr);
+        console.log(this);
+      });
+    };
+
+  render() {
+    return (
+
+       <>
+       <h2> hi seseqwe</h2>
+       <button onClick={this.addFavTeam}>Click</button>
+      {this.state.liveMatchArr.map(match => {
+                return liveMatchArr.match.map(item => {
+                  console.log(match.league);
+                  return <>
+                  
+                      <li>league: {item.league}</li>
+                      
+                  </>
+                })
+              })
+            }
+       </>
+    
+    )
+  }
+}
+
+export default LiveScoure
+
+
+//   this.state.listBooks.map(book => {
+//     console.log(book.books);
+//     return book.books.map(item => {
+//       console.log(item.name);
+//       return <>
+//         <ListGroup horizontal={item} className="my-2" >
+//           <ListGroup.Item variant="dark">name: {item.name}</ListGroup.Item>
+//           <ListGroup.Item variant="dark">decription:{item.decription}</ListGroup.Item>
+//           <ListGroup.Item variant="dark">status: {item.status}</ListGroup.Item>
+//         </ListGroup>
+//       </>
+//     })
+//   })
+// }
+// <h1> "half": "First Half",
+// "elapsed": 2,
+// "league": "C-League",
+// "home": "Asia Euro United",
+// "away": "NagaWorld",
+// "homeGoals": 0,
+//  "awayGoals": 0
+//  </h1>
+// 
+    
+  // getUserInput = (e) => {
+  //   console.log(e.target.value);
+  //   this.setState({
+  //     name: e.target.value
+  //   })
+  //   console.log(this.state.name);
+  // }
+  
+  
+  // addFavTeam = async (e) => {
+  //   e.preventDefault();
+  //   await axios.post(`${process.env.REACT_APP_SERVER_URL}/favteam?name=${this.state.name}`).then((res) => {
+  //     this.setState({
+  //       name: res.data.name,
+  //     });
+  //   });
+  // };
